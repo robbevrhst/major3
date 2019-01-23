@@ -1,0 +1,14 @@
+.spotlight {
+  height: 30rem;
+  background-image: url(../assets/img/bg-yellow.png);
+}
+
+.specs {
+  height: 10rem;
+  background-image: url(../assets/img/bg-pink.png);
+}
+
+.news {
+  height: 30rem;
+  background-image: url(../assets/img/bg-green.png);
+}

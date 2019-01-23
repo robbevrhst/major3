@@ -1,8 +1,21 @@
 @import './css/reset.css';
 @import './css/vars.css';
-@import './css/navigation.css';
 @import './css/site-header.css';
+@import './css/main.css';
+@import './css/navigation.css';
 
 .hidden {
   display: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

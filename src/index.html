@@ -6,39 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ISB 2018</title>
     <script>
-        WebFontConfig = {
-          custom: {
-            families: ["big john"]
-          }
-        };
+      WebFontConfig = {
+        custom: {
+          families: ["big john"]
+        }
+      };
 
-        (function(d) {
-          var wf = d.createElement("script"),
-            s = d.scripts[0];
-          wf.src =
-            "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
-          wf.async = true;
-          s.parentNode.insertBefore(wf, s);
-        })(document);
-      </script>
+      (function(d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src =
+          "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
   </head>
   <body>
     <header>
-        <nav>
-          <h1 class="hidden">ISB 2018</h1>
-          <img class="logo" src="./assets/img/logo-small@2x.png" alt="ISB 2018" height="80">
-          <label class="hamburger-icon" for="toggle">&#9776</label>
-          <input class="toggle" type="checkbox" id="toggle"/>
-
-          <div class="menu">
-            <a class="menu-link" href="index.html">Home</a>
-            <a class="menu-link" href="programma.html">Programma</a>
-            <a class="menu-link" href="#">Praktisch</a>
-          </div>
-        </nav>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle"> &#9776;</span>
+        <a href="#" class="logo"
+          ><img src="./assets/img/logo-small@2x.png" alt="ISB 2018" height="40"
+        /></a>
+        <ul class="main-nav" id="js-menu">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#" class="nav-links">Programma</a></li>
+          <li><a href="#" class="nav-links">Praktisch</a></li>
+        </ul>
+      </nav>
+      <section class="fold">
+        <p class="internationaal">Internationaal</p>
+        <img
+          class="titel"
+          src="./assets/img/titel@2x.png"
+          alt="STRAATTHEATERFESTIVAL"
+          width="246"
+          height="131"
+        />
+        <div class="row">
+          <img src="./assets/img/splash-blue2x.png" alt="splash" height="25" />
+          <p class="header-locatie">Beveren</p>
+          <img
+            src="./assets/img/splash-blue-reverse2x.png"
+            alt="splash"
+            height="25"
+          />
+        </div>
+        <div class="row">
+          <span class="header-date">24.08</span>
+          <span class="header-date">25.08</span>
+          <span class="header-date">26.08</span>
+        </div>
+      </section>
     </header>
 
-    <main></main>
+    <main>
+      <section class="spotlight">
+        <div class="row">
+          <img src="./assets/img/splash-blue2x.png" alt="splash" height="25" />
+          <h2 class="subtitel">In de spotlight</h2>
+          <img
+            src="./assets/img/splash-blue-reverse2x.png"
+            alt="splash"
+            height="25"
+          />
+        </div>
+      </section>
+      <section class="specs"></section>
+      <section class="news"></section>
+    </main>
 
     <footer></footer>
   </body>

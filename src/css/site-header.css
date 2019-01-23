@@ -1,0 +1,28 @@
+header {
+  background-image: url(../assets/img/bg-blue.png);
+}
+
+.fold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.fold p {
+  color: var(--client-light-blue);
+}
+
+.titel {
+  margin: .7rem 0 1.2rem;
+}
+
+.header-locatie {
+  font-size: 1.6rem;
+  margin: 0 .5rem;
+}
+
+.header-date {
+  margin: 1rem .75rem 1rem 0;
+  color: var(--client-yellow);
+}
