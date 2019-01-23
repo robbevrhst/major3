@@ -1,11 +1,11 @@
 :root {
-  --client-dark-grey: #666;
-  --client-darkest-grey: #444;
-  --client-black: #222;
-  --client-blue: #407ab1;
+  --client-blue: #359dbf;
+  --client-pink: #ff6696;
+  --client-yellow: #e5c077;
+  --client-light-blue: #a3dbf0;
+  --client-dark-blue: #081740;
 }
 
 @custom-media --sm screen and (min-width: 0);
-@custom-media --md screen and (min-width: 21em);
-@custom-media --lg screen and (min-width: 38.31em);
-@custom-media --xl screen and (min-width: 60em);
+@custom-media --md screen and (min-width: 320px); /*21em?*/
+@custom-media --lg screen and (min-width: 768px);
