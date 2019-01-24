@@ -4,7 +4,6 @@
 }
 
 .news {
-  height: 30rem;
   background-image: url(../assets/img/bg-green.png);
 }
 
@@ -45,7 +44,7 @@
 }
 
 .template:before {
-  padding-top: 100%;
+  wi-top: 100%;
 } */
 
 .grid-dag {
@@ -78,7 +77,7 @@
   width: 95vw;
   text-align: center;
   border: .2rem solid white;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   cursor: pointer;
   max-width: 22rem;
   min-width: 19rem;
@@ -95,7 +94,7 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 }
 
 .spec-item {
@@ -145,4 +144,56 @@
 
 .spec-image3 {
   right: -.4rem;
+}
+
+.nieuwsbrief {
+  width: 80vw;
+  margin: 1.5rem 0 5rem;
+}
+
+.brief-bg {
+  position: absolute;
+  z-index: 0;
+  width: 90vw;
+  max-width: 27em;
+}
+
+.brief-img {
+  width: 20vw;
+  margin-top: -2rem;
+  z-index: 99;
+  max-width: 6.5em;
+}
+
+.brief-content {
+  z-index: 99;
+}
+
+.brief-titel {
+  color: white;
+}
+
+.brief-tekst {
+  color: white;
+  font-family: helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+.brief-input {
+  margin: 1em 0;
+}
+
+.locatie {
+  background-image: url(../assets/img/bg-blue.png);
+  position: relative;
+}
+
+.kaart {
+  width: 100vw;
+}
+
+.locatie-subtitel {
+  margin: 1rem;
+  text-align: center;
+  position: absolute;
 }

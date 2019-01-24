@@ -1,0 +1,33 @@
+footer {
+  background-image: url(../assets/img/bg-blue.png);
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    'fest img'
+    'praktisch .'
+    'social .';
+}
+
+.footer-nav-item {
+  padding: 1rem;
+}
+
+.footer-nav-fest {
+  grid-area: fest;
+}
+
+.footer-nav-praktisch {
+  grid-area: praktisch;
+}
+
+.footer-nav-social {
+  grid-area: social;
+}
+
+.footer-nav-img {
+  grid-area: img;
+}
