@@ -3,11 +3,6 @@
   padding-bottom: 1.5rem;
 }
 
-.specs {
-  height: 10rem;
-  background-image: url(../assets/img/bg-pink.png);
-}
-
 .news {
   height: 30rem;
   background-image: url(../assets/img/bg-green.png);
@@ -21,7 +16,7 @@
 
 .subtitel h2 {
   margin: 0 .5rem;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .template {
@@ -73,7 +68,7 @@
   grid-area: titel;
   color: white;
   background-color: var(--client-blue);
-  font-size: 1.8rem;
+  font-size: 1.8em;
   padding: .5rem;
 }
 
@@ -93,4 +88,61 @@
 .prog-btn:hover {
   background-color: white;
   color: var(--client-yellow);
+}
+
+.specs {
+  background-image: url(../assets/img/bg-pink.png);
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  padding: 2.5rem 0;
+}
+
+.spec-item {
+  color: white;
+  padding: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+.spec-dagen {
+  background-image: url(../assets/img/spec-green.png);
+}
+
+.spec-acts {
+  background-image: url(../assets/img/spec-blue.png);
+}
+
+.spec-landen {
+  background-image: url(../assets/img/spec-yellow.png);
+}
+
+.spec-number {
+  font-size: 2.4rem;
+  z-index: 99;
+}
+
+.spec-tekst {
+  font-size: .5rem;
+  z-index: 99;
+}
+
+.spec-image {
+  position: absolute;
+}
+
+.spec-image1 {
+  top: -.5rem;
+  left: -.3rem;
+}
+
+.spec-image2 {
+  top: 1rem;
+  right: -.5rem;
+}
+
+.spec-image3 {
+  right: -.4rem;
 }

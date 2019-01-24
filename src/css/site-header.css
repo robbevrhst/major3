@@ -15,11 +15,12 @@ header {
 
 .titel {
   margin: .7rem 0 1.2rem;
+  width: 66vw;
 }
 
 .header-locatie {
-  font-size: 1.6rem;
-  margin: 0 .5rem;
+  font-size: 1.6em;
+  margin: 0 .5em;
 }
 
 .header-date {

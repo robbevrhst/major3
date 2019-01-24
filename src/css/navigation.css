@@ -11,7 +11,8 @@ header {
 }
 
 .navbar {
-
+  border: .1em solid white;
+  min-height: 2.7em;
 }
 
 .main-nav {
@@ -75,7 +76,6 @@ header {
     display: none;
   }
 
-  .logo:hover,
   .nav-links:hover {
     color: white;
   }
