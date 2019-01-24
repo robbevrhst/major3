@@ -10,6 +10,7 @@ footer {
     'fest img'
     'praktisch .'
     'social .';
+  padding: 2em 0;
 }
 
 .footer-nav-item {
@@ -30,4 +31,63 @@ footer {
 
 .footer-nav-img {
   grid-area: img;
+}
+
+.footer-nav-titel {
+  color: white;
+  font-size: 1.4em;
+  padding-bottom: .3em;
+}
+
+.footer-nav-link {
+  color: white;
+  font-family: helvetica, sans-serif;
+  padding-bottom: .3em;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(2, 1fr);
+  grid-template-areas:
+    'woord woord woord'
+    'p1 p2 p3'
+    'p4 p5 p6';
+}
+
+.partner-tekst {
+  font-family: Helvetica, sans-serif;
+  color: var(--client-light-blue);
+  grid-area: woord;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.partner-img {
+  align-self: center;
+  justify-self: center;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.p3 {
+  grid-area: p3;
+}
+
+.p4 {
+  grid-area: p4;
+}
+
+.p5 {
+  grid-area: p5;
+}
+
+.p6 {
+  grid-area: p6;
 }
