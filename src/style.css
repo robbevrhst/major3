@@ -11,11 +11,20 @@
 .col {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
+}
+
+.helvetica {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
 }

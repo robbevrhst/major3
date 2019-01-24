@@ -1,6 +1,6 @@
 .spotlight {
-  height: 30rem;
   background-image: url(../assets/img/bg-yellow.png);
+  padding-bottom: 1.5rem;
 }
 
 .specs {
@@ -11,4 +11,86 @@
 .news {
   height: 30rem;
   background-image: url(../assets/img/bg-green.png);
+}
+
+.subtitel {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitel h2 {
+  margin: 0 .5rem;
+  font-size: 1rem;
+}
+
+.template {
+  background-image: url(../assets/img/silento-img.png);
+  background-size: cover;
+  margin-bottom: 1rem;
+  width: 95vw;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 1rem repeat(2, auto) 1fr 1rem;
+  grid-template-rows: 1fr repeat(2, auto) 1rem;
+  grid-template-areas:
+    '. . . . .'
+    '. dag uur . .'
+    '. titel titel titel .'
+    '. . . . .';
+}
+
+/* .width {
+  width: 50vw;
+}
+
+.width:before {
+  content: '';
+  display: block;
+}
+
+.template:before {
+  padding-top: 100%;
+} */
+
+.grid-dag {
+  grid-area: dag;
+  color: white;
+  background-color: var(--client-pink);
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.grid-uur {
+  grid-area: uur;
+  color: black;
+  background-color: white;
+  font-size: 1rem;
+  padding: .5rem;
+}
+
+.grid-titel {
+  grid-area: titel;
+  color: white;
+  background-color: var(--client-blue);
+  font-size: 1.8rem;
+  padding: .5rem;
+}
+
+.prog-btn {
+  color: white;
+  line-height: 3rem;
+  width: 95vw;
+  text-align: center;
+  border: .2rem solid white;
+  margin: 0 0 1rem 0;
+  cursor: pointer;
+  max-width: 22rem;
+  min-width: 19rem;
+  transition: all .3s;
+}
+
+.prog-btn:hover {
+  background-color: white;
+  color: var(--client-yellow);
 }
