@@ -1,85 +1,42 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const postcssPresetEnv = require(`postcss-preset-env`);
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin');
-const path = require('path');
 
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const postcssPresetEnv = require('postcss-preset-env');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = (env, {mode}) => {
-  const plugins = [
-    new HtmlWebPackPlugin({
-      template: './src/index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
-    }),
-    new OptimizeCSSAssetsPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ];
-
-  if (mode === 'production') {
-    plugins.push(
-      new HtmlCriticalWebpackPlugin({
-        base: path.resolve(__dirname, 'dist'),
-        src: 'index.html',
-        dest: 'index.html',
-        inline: true,
-        minify: true,
-        extract: true,
-        dimensions: [
-          {
-            width: 1500,
-            height: 700
-          }
-        ],
-        penthouse: {
-          blockJSRequests: false
-        }
-      })
-    );
-  }
-
+  console.log(mode);
   return {
     output: {
-      filename: '[name].[hash].js'
+      filename: 'script.js'
     },
     devServer: {
       overlay: true,
-      hot: true,
-      contentBase: './src'
+      hot: true
     },
     module: {
       rules: [
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: `babel-loader`
+          use: {
+            loader: 'babel-loader'
+          }
         },
         {
-          test: /\.html$/,
-          use: [
-            {
-              loader: 'html-srcsets-loader',
-              options: {
-                attrs: [':src', ':srcset']
-              }
+          test: /\.(jpe?g|png|svg|webp)$/,
+          use: {
+            loader: 'url-loader',
+            options: {
+              limit: 1000,
+              context: './src',
+              name: '[path][name].[ext]'
             }
-          ]
-        },
-        {
-          test: /\.(jpe?g|svg|png|webp)$/,
-          loader: `url-loader`,
-          options: {
-            limit: 1000,
-            context: './src',
-            name: '[path][name].[hash].[ext]'
           }
         },
         {
           test: /\.css$/,
-          loader: [
+          use: [
             mode === 'production'
               ? MiniCssExtractPlugin.loader
               : 'style-loader',
@@ -90,8 +47,7 @@ module.exports = (env, {mode}) => {
               options: {
                 sourceMap: true,
                 plugins: [
-                  require(`postcss-will-change`),
-                  require(`postcss-import`),
+                  require('postcss-import'),
                   postcssPresetEnv({stage: 0})
                 ]
               }
@@ -100,6 +56,12 @@ module.exports = (env, {mode}) => {
         }
       ]
     },
-    plugins
+    plugins: [
+      new MiniCssExtractPlugin({
+        filename: 'style.css'
+      }),
+      new OptimizeCSSAssetsPlugin(),
+      new webpack.HotModuleReplacementPlugin()
+    ]
   };
 };
