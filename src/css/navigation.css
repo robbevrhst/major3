@@ -20,6 +20,7 @@ header {
 
 .main-nav {
   display: none;
+  z-index: 999;
 }
 
 .nav-links,
@@ -35,6 +36,7 @@ header {
 
 .logo {
   display: inline-block;
+  z-index: 999;
 }
 
 .navbar-toggle {

@@ -1,5 +1,6 @@
 header {
   background-image: url(../assets/img/bg-blue.png);
+  position: relative;
 }
 
 .fold {
@@ -7,6 +8,7 @@ header {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  z-index: -1;
 }
 
 .fold-tekst {
@@ -31,4 +33,65 @@ header {
 .prog-title {
   font-size: 2.4em;
   color: white;
+  z-index: 999;
+}
+
+.trompet, .magician, .masker, .ballon, .acrobat, .kegels {
+  display: none;
+}
+
+@media (--lg) {
+
+  .trompet {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    width: 10rem;
+  }
+
+  .masker {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10rem;
+  }
+
+  .magician {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -6rem;
+    width: 15rem;
+  }
+
+  .ballon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+  }
+
+  .prog-title {
+    padding-bottom: 3rem;
+    font-size: 3.6rem;
+  }
+
+  .acrobat {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18rem;
+  }
+
+  .kegels {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    width: 8rem;
+  }
 }

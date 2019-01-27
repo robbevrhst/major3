@@ -92,7 +92,7 @@ footer {
   grid-area: p6;
 }
 
-@media (--md) {
+@media (--sm) {
 
   .partners {
     display: grid;
@@ -109,7 +109,7 @@ footer {
   }
 }
 
-@media (--partner-md) {
+@media (--md) {
 
   .partners {
     display: grid;

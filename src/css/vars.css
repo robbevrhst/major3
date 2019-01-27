@@ -6,8 +6,8 @@
   --client-dark-blue: #081740;
 }
 
-@custom-media --sm screen and (min-width: 320px);
-@custom-media --md screen and (min-width: 425px);
-@custom-media --partner-md screen and (min-width: 600px);
+@custom-media --sm screen and (min-width: 425px);
+@custom-media --md screen and (min-width: 600px);
 @custom-media --lg screen and (min-width: 768px);
 @custom-media --xl screen and (min-width: 1024px);
+@custom-media --xxl screen and (min-width: 1440px);

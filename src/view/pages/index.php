@@ -21,6 +21,10 @@
           <span class="header-date">26.08</span>
         </div>
       </section>
+      <img class="trompet" src="assets/img/trompet.png" alt="trompet">
+      <img class="masker" src="assets/img/masker.png" alt="masker">
+      <img class="magician" src="assets/img/magician.png" alt="magician">
+      <img class="ballon" src="assets/img/ballon.png" alt="ballon">
     </header>
 
     <main>

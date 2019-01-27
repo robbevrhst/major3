@@ -1,5 +1,7 @@
   <section class="fold">
     <p class="prog-title">Programma</p>
+    <img class="acrobat" src="assets/img/acrobat.png" alt="acrobat">
+    <img class="kegels" src="assets/img/kegels.png" alt="kegels">
   </section>
 </header>
 
@@ -21,10 +23,10 @@
     </form>
   </section>
 
-  <section class="program-list col">
+  <section class="program-list">
     <?php foreach($acts as $act): ?>
-      <a href="index.php?page=act-detail&amp;id=<?php echo $act['id'];?>">
-        <div class="template" style="background-image: url(<?php echo $act['img'];?>)">
+      <a class="program-link" href="index.php?page=act-detail&amp;id=<?php echo $act['id'];?>">
+        <div class="template program-item" style="background-image: url(<?php echo $act['img'];?>)">
           <span class="grid-dag"><?php echo $act['datum'];?></span>
           <span class="grid-uur">
             <?php echo $act['uur'];?>
