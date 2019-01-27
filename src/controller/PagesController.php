@@ -23,7 +23,7 @@ class PagesController extends Controller {
     $actDAO = new ActDAO();
 
     if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
-      $acts = $this->actDAO->search(25, $_GET['soort']);
+      $acts = $this->actDAO->search($_GET['soort']);
       $this->set('soort',$_GET['soort']);
     }else{
       // $acts = $actDAO->selectAll();

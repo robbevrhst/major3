@@ -91,3 +91,71 @@ footer {
 .p6 {
   grid-area: p6;
 }
+
+@media (--md) {
+
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    grid-template-areas:
+      'woord woord woord'
+      'p1 p2 p3'
+      'p4 p5 p6';
+  }
+
+  .partner-img {
+    height: 4rem;
+  }
+}
+
+@media (--partner-md) {
+
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'woord woord woord woord woord woord'
+      'p1 p2 p3 p4 p5 p6';
+  }
+
+  .partner-img {
+    height: 4rem;
+  }
+}
+
+@media (--lg) {
+
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'woord woord woord woord woord woord'
+      'p1 p2 p3 p4 p5 p6';
+  }
+
+  .partner-img {
+    height: 5rem;
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 'img fest praktisch social ';
+    padding: 2em 0;
+  }
+}
+
+@media (--lg) {
+
+  .partners {
+    justify-content: center;
+  }
+
+  .partner-img {
+    height: 5rem;
+  }
+}

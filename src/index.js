@@ -31,7 +31,7 @@ require('./style.css');
   const createActListItem = act => {
     return `
       <a href="index.php?page=act-detail&amp;id=${act['id']}">
-        <div class="template" style="background-image: url(<?php echo $act['img'];?>)">
+        <div class="template" style="background-image: url(${act['img']})">
           <span class="grid-dag">${act['datum']}</span>
           <span class="grid-uur">${act['uur']}</span>
           <h3 class="grid-titel">${act['titel']}</h3>

@@ -6,9 +6,10 @@
           alt="STRAATTHEATERFESTIVAL"
         />
         <div class="row">
-          <img src="./assets/img/splash-blue2x.png" alt="splash" height="25" />
+          <img class="splash" src="./assets/img/splash-blue2x.png" alt="splash" height="25" />
           <p class="header-locatie fold-tekst">Beveren</p>
           <img
+            class="splash"
             src="./assets/img/splash-blue-reverse2x.png"
             alt="splash"
             height="25"
@@ -23,18 +24,19 @@
     </header>
 
     <main>
-      <section class="spotlight col">
-        <div class="row subtitel">
-          <img src="./assets/img/splash-white.png" alt="splash" height="25" />
+      <section class="spotlight">
+        <div class="row subtitel stitel">
+          <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
           <h2>In de spotlight</h2>
           <img
+            class="splash"
             src="./assets/img/splash-white-reverse.png"
             alt="splash"
             height="25"
           />
         </div>
-        <a href="index.php?page=act-detail&amp;id=<?php echo $acts[2]['id'];?>">
-          <div class="template" style="background-image: url(<?php echo $acts[2]['img']; ?>)">
+        <a class="spot-link1" href="index.php?page=act-detail&amp;id=<?php echo $acts[2]['id'];?>">
+          <div class="template spotlight1" style="background-image: url(<?php echo $acts[2]['img']; ?>)">
             <span class="grid-dag"><?php echo $acts[2]['datum']; ?></span>
             <span class="grid-uur"
               ><?php echo $acts[2]['uur']; ?></span
@@ -42,11 +44,11 @@
             <h3 class="grid-titel"><?php echo $acts[2]['titel']; ?></h3>
           </div>
         </a>
-        <a href="index.php?page=programma">
+        <a class="sbtn" href="index.php?page=programma">
           <div class="prog-btn">Bekijk volledig programma</div>
         </a>
-        <a href="index.php?page=act-detail&amp;id=<?php echo $acts[23]['id'];?>">
-          <div class="template" style="background-image: url(<?php echo $acts[23]['img']; ?>)">
+        <a class="spot-link2" href="index.php?page=act-detail&amp;id=<?php echo $acts[23]['id'];?>">
+          <div class="template spotlight2" style="background-image: url(<?php echo $acts[23]['img']; ?>)">
             <span class="grid-dag"><?php echo $acts[23]['datum']; ?></span>
             <span class="grid-uur"
               ><?php echo $acts[23]['uur']; ?></span
@@ -54,13 +56,22 @@
             <h3 class="grid-titel"><?php echo $acts[23]['titel']; ?></h3>
           </div>
         </a>
-        <a href="index.php?page=act-detail&amp;id=<?php echo $acts[51]['id'];?>">
-          <div class="template" style="background-image: url(<?php echo $acts[51]['img']; ?>)">
+        <a class="spot-link3" href="index.php?page=act-detail&amp;id=<?php echo $acts[51]['id'];?>">
+          <div class="template spotlight3" style="background-image: url(<?php echo $acts[51]['img']; ?>)">
             <span class="grid-dag"><?php echo $acts[51]['datum']; ?></span>
             <span class="grid-uur"
               ><?php echo $acts[51]['uur']; ?></span
             >
             <h3 class="grid-titel"><?php echo $acts[51]['titel']; ?></h3>
+          </div>
+        </a>
+        <a class="spot-link4" href="index.php?page=act-detail&amp;id=<?php echo $acts[18]['id'];?>">
+          <div class="template spotlight4" style="background-image: url(<?php echo $acts[18]['img']; ?>)">
+            <span class="grid-dag"><?php echo $acts[18]['datum']; ?></span>
+            <span class="grid-uur"
+              ><?php echo $acts[18]['uur']; ?></span
+            >
+            <h3 class="grid-titel"><?php echo $acts[18]['titel']; ?></h3>
           </div>
         </a>
       </section>
@@ -99,18 +110,19 @@
         </div>
       </section>
 
-      <section class="news col">
-        <div class="row subtitel">
-          <img src="./assets/img/splash-white.png" alt="splash" height="25" />
+      <section class="news">
+        <div class="row subtitel news-titel">
+          <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
           <h2>Attention</h2>
           <img
+            class="splash"
             src="./assets/img/splash-white-reverse.png"
             alt="splash"
             height="25"
           />
         </div>
-        <a href="index.php?page=act-detail&amp;id=<?php echo $acts[0]['id'];?>">
-          <div class="template" style="background-image: url(<?php echo $acts[0]['img']; ?>)">
+        <a class="nl1" href="index.php?page=act-detail&amp;id=<?php echo $acts[0]['id'];?>">
+          <div class="template news1" style="background-image: url(<?php echo $acts[0]['img']; ?>)">
             <span class="grid-dag"><?php echo $acts[0]['datum']; ?></span>
             <span class="grid-uur"
               ><?php echo $acts[0]['uur']; ?></span
@@ -118,8 +130,8 @@
             <h3 class="grid-titel"><?php echo $acts[0]['titel']; ?></h3>
           </div>
         </a>
-        <a href="index.php?page=act-detail&amp;id=<?php echo $acts[52]['id'];?>">
-          <div class="template" style="background-image: url(<?php echo $acts[52]['img']; ?>)">
+        <a class="nl2" href="index.php?page=act-detail&amp;id=<?php echo $acts[52]['id'];?>">
+          <div class="template news2" style="background-image: url(<?php echo $acts[52]['img']; ?>)">
             <span class="grid-dag"><?php echo $acts[52]['datum']; ?></span>
             <span class="grid-uur"
               ><?php echo $acts[52]['uur']; ?></span
@@ -147,9 +159,10 @@
       </section>
       <section class="locatie col">
         <div class="row subtitel locatie-subtitel">
-          <img src="./assets/img/splash-white.png" alt="splash" height="25" />
+          <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
           <h2>Waar de magie plaatsvindt</h2>
           <img
+            class="splash"
             src="./assets/img/splash-white-reverse.png"
             alt="splash"
             height="25"

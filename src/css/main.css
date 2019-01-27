@@ -1,16 +1,21 @@
-.spotlight, .program-list {
+.spotlight,
+.program-list {
   background-image: url(../assets/img/bg-yellow.png);
   padding-bottom: 1.5rem;
 }
 
 .news {
   background-image: url(../assets/img/bg-green.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitel {
   color: white;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  z-index: 1;
 }
 
 .subtitel h2 {
@@ -289,4 +294,213 @@
 
 .filter {
   background-image: url(../assets/img/bg-pink.png);
+}
+
+.detail-kaart {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (--md) {
+
+  .subtitel {
+    font-size: 1.4em;
+  }
+
+  .splash {
+    height: 2.2rem;
+  }
+
+  .spec-number {
+    font-size: 3.6rem;
+  }
+
+  .spec-tekst {
+    font-size: .8rem;
+  }
+
+  .spec-image1 {
+    width: 55px;
+  }
+
+  .spec-image2 {
+    width: 75px;
+  }
+
+  .spec-image3 {
+    width: 45px;
+    right: -1rem;
+  }
+}
+
+.spotlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (--lg) {
+
+  .spotlight1 {
+    height: 40rem;
+  }
+
+  .spotlight4 {
+    height: 20rem;
+  }
+
+  .spotlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto) 1fr repeat(2, auto);
+    grid-template-areas:
+      'stitel stitel'
+      'sl1 sl1'
+      'sl2 sl3'
+      'sl4 sl4'
+      'sbtn sbtn';
+    justify-items: center;
+  }
+
+  .stitel {
+    grid-area: stitel;
+  }
+
+  .sbtn {
+    grid-area: sbtn;
+  }
+
+  .prog-btn {
+    max-width: 95vw;
+  }
+
+  .spot-link1 {
+    grid-area: sl1;
+  }
+
+  .spot-link2 {
+    grid-area: sl2;
+  }
+
+  .spotlight2, .spotlight3 {
+    width: 45vw;
+  }
+
+  .spot-link3 {
+    grid-area: sl3;
+  }
+
+  .spot-link4 {
+    grid-area: sl4;
+  }
+
+  .spec-number {
+    font-size: 4.8rem;
+  }
+
+  .spec-tekst {
+    font-size: 1rem;
+  }
+
+  .spec-image1 {
+    width: 70px;
+    left: -1rem;
+  }
+
+  .spec-image2 {
+    width: 90px;
+    right: -1rem;
+  }
+
+  .spec-image3 {
+    width: 60px;
+    right: -1rem;
+  }
+
+  .news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      'ntitel ntitel'
+      'nl1 nl2'
+      'nb nb';
+    justify-items: center;
+  }
+
+  .news-titel {
+    grid-area: ntitel;
+  }
+
+  .nl1 {
+    grid-area: nl1;
+  }
+
+  .nl2 {
+    grid-area: nl2;
+  }
+
+  .nieuwsbrief {
+    grid-area: nb;
+  }
+
+  .news1, .news2 {
+    width: 45vw;
+  }
+}
+
+@media (--xl) {
+
+  .spotlight {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr);
+    grid-template-rows: auto repeat(2, 1fr) auto;
+    grid-template-areas:
+      'stitel stitel stitel'
+      'sl1 sl2 sl3'
+      'sl1 sl4 sl4'
+      'sbtn sbtn sbtn';
+    justify-items: center;
+  }
+
+  .spotlight2, .spotlight3 {
+    width: 20vw;
+    height: 17rem;
+  }
+
+  .spotlight1, .spotlight4 {
+    width: 45vw;
+  }
+
+  .spotlight1 {
+    height: 35rem;
+  }
+
+  .spotlight4 {
+    height: 17rem;
+  }
+
+  .spec-number {
+    font-size: 6rem;
+  }
+
+  .spec-tekst {
+    font-size: 1.2rem;
+  }
+
+  .spec-image1 {
+    width: 85px;
+    left: -2rem;
+  }
+
+  .spec-image2 {
+    width: 105px;
+    right: -2rem;
+  }
+
+  .spec-image3 {
+    width: 75px;
+    right: -2.5rem;
+  }
 }

@@ -21,9 +21,10 @@
   <section class="portfolio col">
     <div class="portfolio-text col">
       <div class="row subtitel">
-        <img src="./assets/img/splash-white.png" alt="splash" height="25" />
+        <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
         <h2 class="text-center">Over <?php echo $act['artiest'];?></h2>
         <img
+          class="splash"
           src="./assets/img/splash-white-reverse.png"
           alt="splash"
           height="25"
@@ -46,5 +47,25 @@
       <?php endforeach; ?>
       </div>
     </div>
+    <?php if(!empty($act['locatie_img'])): ?>
+      <div class="locatie col detail-kaart-div">
+      <div class="row subtitel">
+        <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
+        <h2 class="text-center">Place to be</h2>
+        <img
+        class="splash"
+          src="./assets/img/splash-white-reverse.png"
+          alt="splash"
+          height="25"
+        />
+      </div>
+        <picture class="detail-kaart">
+          <source media="(max-width: 425px)" srcset="<?php echo $act['locatie_img'];?>.png">
+          <source media="(max-width: 2500px)" srcset="<?php echo $act['locatie_img'];?>-lg.png">
+          <source srcset="<?php echo $act['locatie_img'];?>-lg.png">
+          <img class="detail-kaart" src="<?php echo $act['locatie_img'];?>-lg.png" alt="kaart">
+        </picture>
+      </div>
+      <?php endif;?>
   </section>
 </main>

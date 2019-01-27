@@ -50,7 +50,7 @@ header {
   display: block;
 }
 
-@media (--md) {
+@media (--lg) {
 
   .navbar {
     display: flex;
