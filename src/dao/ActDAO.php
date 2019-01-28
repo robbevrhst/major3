@@ -28,6 +28,8 @@ class ActDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 
+
+
   public function selectById($id){
     $sql = "SELECT * FROM `isb_acts` WHERE `id`=:id";
     $stmt = $this->pdo->prepare($sql);

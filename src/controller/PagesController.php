@@ -26,7 +26,6 @@ class PagesController extends Controller {
       $acts = $this->actDAO->search($_GET['soort']);
       $this->set('soort',$_GET['soort']);
     }else{
-      // $acts = $actDAO->selectAll();
       $acts = $this->actDAO->search();
       $this->set('acts', $acts);
       $this->set('title', 'Programma');
@@ -37,12 +36,6 @@ class PagesController extends Controller {
     $this->set('acts', $acts);
 
     $this->set('soorten', $this->actDAO->selectSoorten());
-    // if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
-
-    //   header('Content-Type: application/json');
-    //   echo json_encode($acts);
-    //   exit();
-    // }
   }
 
 }

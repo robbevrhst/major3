@@ -1,6 +1,8 @@
+/*stylelint-disable*/
 * {
   box-sizing: border-box;
 }
+/*stylelint-enable*/
 
 body {
   font-family: 'big john', Helvetica, sans-serif;
@@ -87,6 +89,7 @@ header {
 }
 
 @media (--xl) {
+
   .navbar {
     justify-content: center;
   }

@@ -304,6 +304,29 @@
 
 .filter {
   background-image: url(../assets/img/bg-pink.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+select {
+  font-size: 1.2rem;
+  border: 2px solid var(--client-dark-blue);
+}
+
+.form__submit {
+  font-size: 1.2rem;
+  background-color: white;
+  color: black;
+  border: 2px solid var(--client-dark-blue);
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: var(--client-dark-blue);
+  color: white;
 }
 
 .detail-kaart {
@@ -620,7 +643,6 @@
   }
 
   .locatie {
-    padding: 2rem 0;
     grid-area: dkaart;
   }
 
@@ -637,6 +659,7 @@
       'dkaart dbijl';
     align-items: start;
     justify-items: center;
+    padding-bottom: 2rem;
   }
 
   .portfolio-text {
@@ -669,5 +692,9 @@
 
   .program-item {
     width: 32vw;
+  }
+
+  .detail-kaart {
+    margin-top: -.8rem;
   }
 }
