@@ -18,7 +18,7 @@
 </header>
 
 <main>
-  <section class="portfolio col">
+  <section class="portfolio">
     <div class="portfolio-text col">
       <div class="row subtitel">
         <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />

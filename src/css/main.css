@@ -276,6 +276,7 @@
   background-image: url(../assets/img/bg-blue.png);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .text-center {
@@ -285,6 +286,7 @@
 
 .portfolio-text {
   width: 95vw;
+  margin-bottom: 2rem;
 }
 
 .extra-video {
@@ -293,7 +295,7 @@
 }
 
 .extra-img {
-  width: 30vw;
+  width: 30.9vw;
 }
 
 .filter {
@@ -310,7 +312,35 @@
   display: none;
 }
 
+.nieuwsbrief-mail {
+  margin: .5rem 0;
+}
+
+.nieuwsbrief-input {
+  padding: .2rem;
+  width: 13rem;
+  background-color: var(--client-light-blue);
+  border: .2rem solid var(--client-light-blue);
+  height: 1.7rem;
+}
+
+.nieuwsbrief-btn {
+  background-color: var(--client-blue);
+  border: .1rem solid var(--client-light-blue);
+  height: 1.7rem;
+  margin-left: -.1rem;
+}
+
+.arrow {
+  height: 1rem;
+  margin-top: .2rem;
+}
+
 @media (--sm) {
+
+  .extra-video {
+    height: 25rem;
+  }
 
   .subtitel {
     font-size: 1.4em;
@@ -350,6 +380,10 @@
 }
 
 @media (--lg) {
+
+  .extra-video {
+    height: 30rem;
+  }
 
   .spotlight1 {
     height: 30rem;
@@ -559,12 +593,46 @@
     margin-top: 3.5rem;
   }
 
+  .detail-kaart {
+    width: 47vw;
+  }
+
   .locatie {
     padding: 2rem 0;
+    grid-area: dkaart;
   }
 
   .locatie-subtitel {
     margin-top: -1rem;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'dbio dbijl'
+      'dkaart dbijl';
+    align-items: start;
+    justify-items: center;
+  }
+
+  .portfolio-text {
+    grid-area: dbio;
+    width: 45vw;
+  }
+
+  .portfolio-bijlage {
+    grid-area: dbijl;
+  }
+
+  .extra-video {
+    width: 46vw;
+    height: 27rem;
+  }
+
+  .extra-img {
+    width: 15vw;
   }
 }
 

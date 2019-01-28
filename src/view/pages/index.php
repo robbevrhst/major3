@@ -1,10 +1,49 @@
 <section class="fold">
         <p class="internationaal fold-tekst">Internationaal</p>
-        <img
+        <!-- <img
           class="titel"
           src="./assets/img/titel@2x.png"
           alt="STRAATTHEATERFESTIVAL"
-        />
+        /> -->
+        <picture class="titel">
+              <source
+                sizes="(max-width: 768px) 66vw,
+                (min-width: 7068px) 58vw,
+                (min-width: 1024px) 50vw"
+                type="image/webp"
+                srcset="
+                  assets/img/optim/titel@2x_10.webp   120w,
+                  assets/img/optim/titel@2x_20.webp   240w,
+                  assets/img/optim/titel@2x_33.webp   400w,
+                  assets/img/optim/titel@2x_50.webp   600w,
+                  assets/img/optim/titel@2x_67.webp   799w,
+                  assets/img/optim/titel@2x_75.webp   900w,
+                  assets/img/optim/titel@2x_85.webp  1020w,
+                  assets/img/optim/titel@2x_100.webp 1200w
+                "
+              />
+              <source
+                sizes="(max-width: 768px) 66vw,
+                (min-width: 768px) 58vw,
+                (min-width: 1024px) 50vw"
+                type="image/png"
+                srcset="
+                  assets/img/optim/titel@2x_10.png   120w,
+                  assets/img/optim/titel@2x_20.png   240w,
+                  assets/img/optim/titel@2x_33.png   400w,
+                  assets/img/optim/titel@2x_50.png   600w,
+                  assets/img/optim/titel@2x_67.png   799w,
+                  assets/img/optim/titel@2x_75.png   900w,
+                  assets/img/optim/titel@2x_85.png  1020w,
+                  assets/img/optim/titel@2x_100.png 1200w
+                "
+              />
+              <img
+                class="titel"
+                src="assets/img/optim/titel@2x_100.png"
+                alt="Straattheaterfestival"
+              />
+            </picture>
         <div class="row">
           <img class="splash" src="./assets/img/splash-blue2x.png" alt="splash" height="25" />
           <p class="header-locatie fold-tekst">Beveren</p>
@@ -158,7 +197,10 @@
           <div class="brief-content">
             <p class="brief-titel">Mis geen enkele act!</p>
             <p class="brief-tekst">Vul uw e-mailadres in en blijf up to date</p>
-            <input class="brief-input" type="text" />
+            <div class="nieuwsbrief-mail row">
+              <input class="nieuwsbrief-input" type="email" placeholder="Wat is jouw e-mail?"></input>
+              <button class="nieuwsbrief-btn" type="submit"><img class="arrow" src="assets/img/arrow.png" alt="arrow right"></button>
+          </div>
           </div>
         </div>
         <img class="luidspreker-bg" src="assets/img/luidspreker-bg.png" alt="bg">

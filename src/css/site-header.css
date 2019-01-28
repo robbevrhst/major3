@@ -94,4 +94,33 @@ header {
     right: 0;
     width: 8rem;
   }
+
+  .titel {
+    width: 58vw;
+  }
+}
+
+@media (--xl) {
+
+  .titel {
+    width: 50vw;
+  }
+
+  .prog-title {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 4.8rem;
+  }
+
+  .acrobat {
+    top: 0;
+    left: 0;
+    width: 22rem;
+  }
+
+  .kegels {
+    top: 1.5rem;
+    right: 0;
+    width: 10rem;
+  }
 }
