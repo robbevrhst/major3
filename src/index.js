@@ -17,9 +17,9 @@ require('./style.css');
 
   const init = () => {
     //return;
-    if ($filterForm) {
-      $filterForm.addEventListener(`submit`, handleSubmitFilterForm);
-    }
+    // if ($filterForm) {
+    //   $filterForm.addEventListener(`submit`, handleSubmitFilterForm);
+    // }
   };
 
   const handleLoadActs = data => {
@@ -39,26 +39,26 @@ require('./style.css');
       </a>`;
   };
 
-  const handleSubmitFilterForm = e => {
-    console.log('submit');
-    e.preventDefault();
-    const qs = new URLSearchParams([
-      ...new FormData($filterForm).entries()
-    ]).toString();
-    fetch(`${$filterForm.getAttribute('action')}?${qs}`, {
-      headers: new Headers({
-        Accept: `application/json`
-      }),
-      method: 'get'
-    })
-      .then(r => r.json())
-      .then(data => handleLoadActs(data));
-    window.history.pushState(
-      {},
-      '',
-      `${window.location.href.split('?')[0]}?${qs}`
-    );
-  };
+  // const handleSubmitFilterForm = e => {
+  //   console.log('submit');
+  //   e.preventDefault();
+  //   const qs = new URLSearchParams([
+  //     ...new FormData($filterForm).entries()
+  //   ]).toString();
+  //   fetch(`${$filterForm.getAttribute('action')}?${qs}`, {
+  //     headers: new Headers({
+  //       Accept: `application/json`
+  //     }),
+  //     method: 'get'
+  //   })
+  //     .then(r => r.json())
+  //     .then(data => handleLoadActs(data));
+  //   window.history.pushState(
+  //     {},
+  //     '',
+  //     `${window.location.href.split('?')[0]}?${qs}`
+  //   );
+  // };
 
   init();
 }

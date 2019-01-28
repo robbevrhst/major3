@@ -9,6 +9,7 @@
   <section class="filter">
     <h2 class="hidden">Filter</h2>
     <form action="index.php?page=programma" class="filter__form">
+    <input type="hidden" name="page" value="programma"/>
     <input type="hidden" name="action" value="filter" />
       <label for="term" class="form__label">
         <span class="hidden">Search</span>

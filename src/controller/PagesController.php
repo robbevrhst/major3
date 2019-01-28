@@ -37,12 +37,12 @@ class PagesController extends Controller {
     $this->set('acts', $acts);
 
     $this->set('soorten', $this->actDAO->selectSoorten());
-    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+    // if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
 
-      header('Content-Type: application/json');
-      echo json_encode($acts);
-      exit();
-    }
+    //   header('Content-Type: application/json');
+    //   echo json_encode($acts);
+    //   exit();
+    // }
   }
 
 }
