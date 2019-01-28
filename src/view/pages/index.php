@@ -78,6 +78,7 @@
             <h3 class="grid-titel"><?php echo $acts[18]['titel']; ?></h3>
           </div>
         </a>
+        <img class="spotlight-img" src="assets/img/spotlight-img.png" alt="spotlight">
       </section>
 
       <section class="specs">
@@ -160,7 +161,10 @@
             <input class="brief-input" type="text" />
           </div>
         </div>
+        <img class="luidspreker-bg" src="assets/img/luidspreker-bg.png" alt="bg">
+        <img class="luidspreker" src="assets/img/luidspreker.png" alt="luidspreker">
       </section>
+
       <section class="locatie col">
         <div class="row subtitel locatie-subtitel">
           <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
