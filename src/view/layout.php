@@ -28,24 +28,24 @@
         <div class="footer-nav-fest footer-nav-item">
           <p class="footer-nav-titel">Festival</p>
           <ul>
-            <li class="footer-nav-link">Line-up</li>
-            <li class="footer-nav-link">Ligging</li>
-            <li class="footer-nav-link">Over ons</li>
+            <li><a class="footer-nav-link" href="index.php?page=programma">Line-up</a></li>
+            <li><a class="footer-nav-link" href="index.php#locatie">Ligging</a></li>
+            <li><a class="footer-nav-link" href="#">Over ons</a></li>
           </ul>
         </div>
         <div class="footer-nav-praktisch footer-nav-item">
           <p class="footer-nav-titel">Praktisch</p>
           <ul class="footer-nav-link">
-            <li class="footer-nav-link">Contact</li>
-            <li class="footer-nav-link">Parking</li>
-            <li class="footer-nav-link">FAQ</li>
+            <li><a class="footer-nav-link" href="#">Contact</a></li>
+            <li><a class="footer-nav-link" href="#">Parking</a></li>
+            <li><a class="footer-nav-link" href="#">FAQ</a></li>
           </ul>
         </div>
         <div class="footer-nav-social footer-nav-item">
           <p class="footer-nav-titel">Links</p>
           <ul class="footer-nav-link">
-            <li class="footer-nav-link">Facebook</li>
-            <li class="footer-nav-link">Beveren Verbindt</li>
+            <li><a class="footer-nav-link" href="https://www.facebook.com/straattheaterfestivalbeveren/">Facebook</a></li>
+            <li><a class="footer-nav-link" href="https://www.beveren.be/">Beveren Verbindt</a></li>
           </ul>
         </div>
         <img class="footer-nav-img footer-nav-item" src="./assets/img/beveren.png" alt="Beveren Verbindt">

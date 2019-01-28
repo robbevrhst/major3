@@ -207,7 +207,7 @@
         <img class="luidspreker" src="assets/img/luidspreker.png" alt="luidspreker">
       </section>
 
-      <section class="locatie col">
+      <section id="locatie" class="locatie col">
         <div class="row subtitel locatie-subtitel">
           <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
           <h2>Waar de magie plaatsvindt</h2>
@@ -218,6 +218,42 @@
             height="25"
           />
         </div>
-        <img class="kaart" src="./assets/img/kaart-sm.png" alt="kaart" />
+        <picture class="kaart">
+              <source
+                sizes="(max-width: 768px) 100vw,
+                (min-width: 1024px) 50vw"
+                type="image/webp"
+                srcset="
+                  assets/img/optim/kaart-sm_10.webp   120w,
+                  assets/img/optim/kaart-sm_20.webp   240w,
+                  assets/img/optim/kaart-sm_33.webp   400w,
+                  assets/img/optim/kaart-sm_50.webp   600w,
+                  assets/img/optim/kaart-sm_67.webp   799w,
+                  assets/img/optim/kaart-sm_75.webp   900w,
+                  assets/img/optim/kaart-sm_85.webp  1020w,
+                  assets/img/optim/kaart-sm_100.webp 1200w
+                "
+              />
+              <source
+                sizes="(max-width: 768px) 100vw,
+                (min-width: 1024px) 50vw"
+                type="image/png"
+                srcset="
+                  assets/img/optim/kaart-sm_10.png   120w,
+                  assets/img/optim/kaart-sm_20.png   240w,
+                  assets/img/optim/kaart-sm_33.png   400w,
+                  assets/img/optim/kaart-sm_50.png   600w,
+                  assets/img/optim/kaart-sm_67.png   799w,
+                  assets/img/optim/kaart-sm_75.png   900w,
+                  assets/img/optim/kaart-sm_85.png  1020w,
+                  assets/img/optim/kaart-sm_100.png 1200w
+                "
+              />
+              <img
+                class="kaart"
+                src="assets/img/optim/kaart-sm_100.png"
+                alt="Kaart"
+              />
+            </picture>
       </section>
     </main>

@@ -184,6 +184,10 @@
   width: 100vw;
 }
 
+.bio {
+  max-width: 20rem;
+}
+
 .locatie-subtitel {
   margin: 1rem;
   text-align: center;
@@ -334,6 +338,13 @@
 .arrow {
   height: 1rem;
   margin-top: .2rem;
+}
+
+.vergelijkbaar {
+  background-image: url(../assets/img/bg-green.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (--sm) {
@@ -531,6 +542,17 @@
 
   .subtitel {
     padding: 1rem 0;
+  }
+
+  .vergelijkbaar-items {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+  }
+
+  .vergelijkbaar1, .vergelijkbaar2, .vergelijkbaar3 {
+    width: 31vw;
   }
 }
 

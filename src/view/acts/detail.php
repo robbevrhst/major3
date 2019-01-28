@@ -1,4 +1,8 @@
-  <section class="detail-header col">
+<?php $rand1 = rand(0,52);?>
+<?php $rand2 = rand(0,52);?>
+<?php $rand3 = rand(0,52);?>
+
+<section class="detail-header col">
     <div class="detail-template" style="background-image: url(<?php echo $act['img'];?>)">
       <span class="detail-locatie"><?php echo $act['locatie'];?></span>
       <span class="detail-datum"><?php echo $act['datum'];?></span>
@@ -67,5 +71,47 @@
         </picture>
       </div>
       <?php endif;?>
+  </section>
+
+  <section class="vergelijkbaar">
+    <div class="row subtitel">
+      <img class="splash" src="./assets/img/splash-white.png" alt="splash" height="25" />
+      <h2 class="text-center">Meer van dit</h2>
+      <img
+        class="splash"
+        src="./assets/img/splash-white-reverse.png"
+        alt="splash"
+        height="25"
+      />
+    </div>
+    <div class="vergelijkbaar-items">
+      <a class="vergelijkbaar-link1" href="index.php?page=act-detail&amp;id=<?php echo $acts[$rand1]['id'];?>">
+          <div class="template vergelijkbaar1" style="background-image: url(<?php echo $acts[$rand1]['img']; ?>)">
+            <span class="grid-dag"><?php echo $acts[$rand1]['datum']; ?></span>
+            <span class="grid-uur"
+              ><?php echo $acts[$rand1]['uur']; ?></span
+            >
+            <h3 class="grid-titel"><?php echo $acts[$rand1]['titel']; ?></h3>
+          </div>
+        </a>
+        <a class="vergelijkbaar-link1" href="index.php?page=act-detail&amp;id=<?php echo $acts[$rand2]['id'];?>">
+          <div class="template vergelijkbaar1" style="background-image: url(<?php echo $acts[$rand2]['img']; ?>)">
+            <span class="grid-dag"><?php echo $acts[$rand2]['datum']; ?></span>
+            <span class="grid-uur"
+              ><?php echo $acts[$rand2]['uur']; ?></span
+            >
+            <h3 class="grid-titel"><?php echo $acts[$rand2]['titel']; ?></h3>
+          </div>
+        </a>
+        <a class="vergelijkbaar-link1" href="index.php?page=act-detail&amp;id=<?php echo $acts[$rand3]['id'];?>">
+          <div class="template vergelijkbaar1" style="background-image: url(<?php echo $acts[$rand3]['img']; ?>)">
+            <span class="grid-dag"><?php echo $acts[$rand3]['datum']; ?></span>
+            <span class="grid-uur"
+              ><?php echo $acts[$rand3]['uur']; ?></span
+            >
+            <h3 class="grid-titel"><?php echo $acts[$rand3]['titel']; ?></h3>
+          </div>
+        </a>
+    </div>
   </section>
 </main>

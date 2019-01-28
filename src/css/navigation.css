@@ -85,3 +85,9 @@ header {
     color: white;
   }
 }
+
+@media (--xl) {
+  .navbar {
+    justify-content: center;
+  }
+}

@@ -11,6 +11,10 @@ class ActsController extends Controller {
 
   public function detail() {
     $actDAO = new ActDAO();
+    $acts = $actDAO->selectAll();
+    $this->set('acts', $acts);
+
+    $actDAO = new ActDAO();
     $actTagDAO = new ActTagDAO();
     $actPortfolioItemDAO = new ActPortfolioItemDAO();
     $actDatumDAO = new ActDatumDAO();
